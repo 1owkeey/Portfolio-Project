@@ -14,7 +14,7 @@ else
     exit 1
 fi
 
-# Ensure the executable is accessible
+## Ensure the executable is accessible
 if ! command -v scp-creds &> /dev/null; then
     echo "Adding $INSTALL_DIR to PATH"
     echo "export PATH=\$PATH:$INSTALL_DIR" >> ~/.bashrc
