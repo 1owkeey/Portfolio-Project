@@ -39,7 +39,7 @@ if option == "Create Credential File":
             except Exception as e:
                 st.error(f"An error occurred: {str(e)}")
 
-    # Upload Text Section
+    # Upload (Text Section)
     st.header("Upload Credentials Text Content")
     env_text_content = st.text_area("Enter your credentials file content here")
 
