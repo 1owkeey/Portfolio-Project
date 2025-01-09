@@ -68,19 +68,19 @@ def main():
 
     subparsers = parser.add_subparsers(dest="command", help="Commands")
 
-    # Upload file command
+    ## Upload file command
     upload_file_parser = subparsers.add_parser("upload-file", help="Upload a .env file.")
     upload_file_parser.add_argument("--file", required=True, help="Path to the .env file to upload.")
     upload_file_parser.add_argument("--limit", type=int, default=1, help="Download limit for the file.")
     upload_file_parser.add_argument("--expire", type=int, default=5, help="Expiration time (in minutes) for the file.")
 
-    # Upload text command
+    ## Upload text command
     upload_text_parser = subparsers.add_parser("upload-text", help="Upload Credentials as text.")
     upload_text_parser.add_argument("--text", required=True, help="Credentials in text format.")
     upload_text_parser.add_argument("--limit", type=int, default=1, help="Download limit for the file.")
     upload_text_parser.add_argument("--expire", type=int, default=5, help="Expiration time (in minutes) for the file.")
 
-    # Download file command
+    ## Download file command
     download_parser = subparsers.add_parser("download", help="Download a .env file.")
     download_parser.add_argument("--code", required=True, help="Download code for the file.")
     download_parser.add_argument("--key", required=True, help="Decryption key for the file.")
