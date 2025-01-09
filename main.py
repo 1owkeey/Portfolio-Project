@@ -37,7 +37,7 @@ class EnvFile(Base):
 # FastAPI app setup
 app = FastAPI()
 
-# Database initialization
+## Database initialization
 Base.metadata.create_all(bind=engine)
 
 # Schemas
