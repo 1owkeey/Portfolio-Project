@@ -1,6 +1,6 @@
 # SCP-Creds CLI
 
-This project is a Python-based CLI tool and Web APP for securely sharing `.env` files and environment variable and general credentials. The tool allows users to upload `.env` or credential files or text, encrypt them, and generate access codes for secure download. It also supports downloading the encrypted files using the generated codes. Additionally, a Streamlit-based UI is available for users who prefer a graphical interface.
+This project is a Python-based CLI tool and Web APP for securely sharing `.env` files and environment variable and general credentials. The tool allows users to upload `.env` or credential files or text, encrypt them, and generate access codes for secure download. It also supports downloading encrypted files using the generated codes. Additionally, a Streamlit-based UI is available for users who prefer a graphical interface.
 
 ## Features
 - **Upload Credential Files**: Upload a `.env` file to a secure server with a download limit and expiration time.
